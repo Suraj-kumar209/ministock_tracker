@@ -1,0 +1,7 @@
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\MiniStockTracker.exe
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\MiniStockTracker.dll
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\MiniStockTracker.deps.json
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\MiniStockTracker.runtimeconfig.json
+D:\DotNet\stockMvcApps\MiniStockTracker\MiniStockTracker\obj\Release\net8.0\PubTmp\Out\MiniStockTracker.pdb
