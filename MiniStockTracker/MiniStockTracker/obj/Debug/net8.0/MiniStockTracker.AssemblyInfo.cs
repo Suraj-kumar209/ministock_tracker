@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniStockTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19d82580e4f9f9eff5151c6e296223e60b57c20f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniStockTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniStockTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

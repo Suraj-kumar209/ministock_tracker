@@ -1,0 +1,50 @@
+@model List<MiniStockTracker.Models.Stock>
+@{
+    ViewData["Title"] = "Stock Tracker";
+    var totalValue = ViewBag.TotalPortfolioValue;
+}
+
+<h2>Mini Stock Tracker</h2>
+
+<h3>Add Stock</h3>
+<form method="post" asp-action="Add">
+    <input type="text" name="symbol" placeholder="Symbol" required />
+    <input type="number" name="quantity" placeholder="Quantity" required />
+    <input type="number" name="price" placeholder="Price" step="0.01" required />
+    <button type="submit">Add</button>
+</form>
+
+<h3>Stock Holdings</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Quantity</th>
+            <th>Avg Buy Price</th>
+            <th>Total Invested</th>
+            <th>Market Value</th>
+            <th>Update Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stock in Model)
+        {
+            <tr>
+                <td>@stock.Symbol</td>
+                <td>@stock.Quantity</td>
+                <td>@stock.AverageBuyPrice.ToString("C")</td>
+                <td>@stock.TotalInvested.ToString("C")</td>
+                <td>@stock.CurrentMarketValue.ToString("C")</td>
+                <td>
+                    <form method="post" asp-action="UpdateQuantity">
+                        <input type="hidden" name="symbol" value="@stock.Symbol" />
+                        <input type="number" name="quantity" value="@stock.Quantity" />
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Total Portfolio Value: <strong>@totalValue.ToString("C")</strong></h3>
